@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all .5s ease;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(236, 122, 193);
+
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+#fondo1{
+    /* background-image:url(https://mediaim.expedia.com/destination/1/15c19af6d32f4bdb8f5f454dedd0554e.jpg);  */
+    /* background-image: url(https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/categoryimages/13/17/131706_v36.jpeg); */
+    /* background-image: url(https://farm4.staticflickr.com/3426/3359291825_fdd6ce31a1_b.jpg); */
+    background-image: url(imagen1.https://mediaim.expedia.com/destination/1/15c19af6d32f4bdb8f5f454dedd0554e.jpgjpg); /* Primera imagen de fondo */
+    background-size: cover;
+    animation: cambioImagen 10s infinite; /* Cambia la imagen cada 10 segundos */
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items:center;
+    justify-content: center;}    
+    @keyframes cambioImagen {
+0% {
+    background-image: url(https://mediaim.expedia.com/destination/1/15c19af6d32f4bdb8f5f454dedd0554e.jpg); /* Primera imagen de fondo */
+}
+    25% {
+    background-image: url(https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/categoryimages/13/17/131706_v36.jpeg); /* Segunda imagen de fondo */
+}
+    50% {
+    background-image: url(https://farm4.staticflickr.com/3426/3359291825_fdd6ce31a1_b.jpg); /* Tercera imagen de fondo */
+}
+    75% {
+    background-image: url(https://www.rosario3.com/__export/1659697789800/sites/rosario3/img/2022/08/05/img_20220805_074435_546_1.jpg); /* Cuarta imagen de fondo */
+}
+    100% {
+    background-image: url(https://mediaim.expedia.com/destination/1/15c19af6d32f4bdb8f5f454dedd0554e.jpg); /* Vuelve a la primera imagen */
+}
+}
+
+body{
+    background-color:rgb(228, 216, 179);
+    
+}
+
+.tarjeta{
+    background-color: white;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 15px -15px 10px rgb(92, 52, 77);
+}
+
+.tarjeta p, .tarjeta h3{
+    padding: 20px;
+    color: black;
+    /* text-decoration: none; */
+
+}
+
+.tarjeta h3{
+    font-size: 3rem;
+    display:flex;
+    justify-content: center;
+    /* text-decoration: none; */
+    
+
+}
+
+.botones{
+    padding-right: 30px;
+}
+
+
+
+#cuadro{
+    display: flex;
+    text-align: center;
+    margin: 10vh;
+    /* 
+    background-color:  rgb(236, 122, 193);;
+    display:flex;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 15px -15px 10px rgb(92, 52, 77) ;
+
+     */
+}
+
+#cuadro, h1{
+    
+    
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(236, 122, 193);;
+    /* text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white */
+    text-shadow: 3px 0px whitesmoke;
+    
+}
+
+h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+.tres-columnas{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.tres-columnas img{
+    width: 100%;
+    height: 150px ;
+    object-fit: cover;
+}
+
+#cuadro-texto{
+    font-size: 1.5rem;
+    background-color: rgb(236, 122, 193);
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-top: -3rem;
+    margin-bottom: 40px;
+    box-shadow: 15px -15px 10px rgb(92, 52, 77) ;
+}
+
+#logowpp img{
+    height: 100px;
+    bottom: 60px;
+    left: 30px;
+    position: fixed
+}
+
+#logowpp img:hover{
+    transition: 1s;
+    height: 150px;
+
+}
+
+footer{
+    padding: 3%;
+    background-color: rgb(236, 122, 193);
+    ;
+}
+
+
